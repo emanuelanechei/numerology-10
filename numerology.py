@@ -194,7 +194,7 @@ class Numerology:
     def get_personal_years(self, begin=2019, end=2030):
         pyears = []
         for y in range(begin, end):
-            pyear = shrink(shrink(y) + shrink(day) + shrink(month))
+            pyear = shrink(shrink(y) + shrink(self.day) + shrink(self.month))
             pyears.append((y, pyear))
         return pyears
 
